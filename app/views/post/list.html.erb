@@ -1,0 +1,37 @@
+<h1>Post#list</h1>
+<p>Find me in app/views/post/list.html.erb</p>
+
+
+<% @posting.each do |p| %>
+    <%= p.id %>
+    <%= p.title %>
+    <br>
+    <%= p.posting %>
+    <br>
+    <p>====hashtags====</p>
+    <% p.hashtags.each do |h| %>
+      <%= h.name %>
+    <% end %>
+    <p>================</p>
+    <br>
+    <a href='/edit/<%=p.id %>'>[수정]</a>
+    <a href='/delete/<%= p.id %>'>[삭제]</a>
+    <br>
+    
+    <form action='/posts/<%= p.id %>/comments/create' method='post'>
+
+      <textarea name="content"></textarea>
+      <input type="submit" value="댓글쓰기">
+      <p> ==================== COMMENTS ================</p>
+      <% p.comments.all.each do |c| %>
+        <%= c.comment %>
+        <br>
+        <a href='/posts/<%= c.id %>/comments/delete'>[댓글삭제]</a>
+        <br>
+      <% end %>
+      <p> ==============================================</p>
+    </form>
+    
+<% end %>
+
+<p>hihi</p>

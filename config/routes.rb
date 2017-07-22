@@ -1,11 +1,18 @@
 Rails.application.routes.draw do
 
+  get 'comment/create'
+
+  get 'comment/delete'
+
   get 'post/index'
-  get 'post/create'
-
+  get 'post/create' => 'post#create'
+  get 'post/list'
   get 'post/edit'
-
   get 'post/delete'
+
+  post '/posts/:id/comments/create' => 'comment#create'
+  get '/posts/:id/comments/destroy' => 'comment#delete'
+
 
   devise_for :users
   get 'user/sign_in'
