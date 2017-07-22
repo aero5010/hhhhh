@@ -5,6 +5,7 @@ class CreatePosts < ActiveRecord::Migration
       t.string :book
       t.string :author
       t.text :posting
+      t.belongs_to :user
 
       t.timestamps null: false
     end

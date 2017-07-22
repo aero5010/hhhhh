@@ -1,4 +1,12 @@
 Rails.application.routes.draw do
+
+  get 'post/index'
+  get 'post/create'
+
+  get 'post/edit'
+
+  get 'post/delete'
+
   devise_for :users
   get 'user/sign_in'
 

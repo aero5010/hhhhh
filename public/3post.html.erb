@@ -13,7 +13,7 @@
 
 <body>
     <div class="container">
-        <form>
+        <%= form_tag /write, method::get do %>
             <div class="form-group input-groups">
                 <input type="string" class="form-control input" name="p_title" placeholder="글 제목">
          
@@ -29,7 +29,7 @@
             <div class="align-right">
                 <button type="submit" class="btn btn-default ">등록</button>
             </div>
-        </form>
+        <% end %>
     </div>
 
 </body>
