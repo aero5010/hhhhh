@@ -1,0 +1,27 @@
+.input {
+    margin-top : 30px;
+}
+
+
+.input-groups{
+    margin-top : 100px;
+}
+
+.posting {
+    height : 50vh;
+    overflow-x : auto;
+    word-break:normal;
+    overflow: auto;
+    word-wrap: break-word;
+    resize: none;
+}
+
+.align-right{
+    display : flex;
+    flex-direction : row;
+    justify-content : flex-end;
+}
+
+#input-author{
+    margin-left : 5px;
+}

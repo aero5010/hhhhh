@@ -1,0 +1,70 @@
+@font-face {
+    font-family: NanumGothic;
+    src: url(font/NanumGothic.ttf);
+}
+
+@font-face {
+    font-family: NanumGothic;
+    src: url(font/NanumGothicBold.ttf);
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: NanumGodicExtraBold;
+    src: url(font/NanumGothicExtraBold.ttf);
+}
+
+@font-face {
+    font-family: NanumMyeongjo;
+    src: url(font/NanumMyeongjo.ttf);
+}
+
+@font-face {
+    font-family: NanumMyeongjo;
+    src: url(font/NanumMyeongjoBold.ttf);
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: NanumMyeongjoExtraBold;
+    src: url(font/NanumMyeongjoExtraBold.ttf);
+}
+
+body {
+    font-family: NanumMyeongjo;
+    background-image: url(img/background2.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    color: #5e5f60;
+}
+
+div.container {
+    padding-top: 20vh;
+}
+
+div.container .img{
+    width: 30vh;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+div.container .img img {
+    width: 30vh;    
+}
+
+div.container p {
+    margin-top: 50px;        /*아이콘과 글귀 마진  */
+    margin-bottom: 70px;    /*글귀와 버튼 마진 */
+    text-align: center
+}
+
+body .btns{
+    background-color: #FFF;
+    color:#000;
+}
+
+h1 {
+    text-align: center
+}
+
