@@ -16,6 +16,7 @@ class PostController < ApplicationController
     @posting.book = params[:b_title]
     @posting.author = params[:b_author]
     @posting.posting = params[:posting]
+    @posting.isPrivate = params[:isPrivate]
     
     @hashtag = params[:hash_tag].split("#")
     @hashtag.each do |tag|
@@ -33,8 +34,15 @@ class PostController < ApplicationController
   end
 
   def edit
+    
   end
 
   def delete
+  end
+  
+  def search_index
+  end
+  
+  def show
   end
 end

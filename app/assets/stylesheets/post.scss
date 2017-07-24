@@ -1,16 +1,16 @@
-// Place all the styles related to the post controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
 .input {
     margin-top : 30px;
 }
 
-
-.input-groups{
-    margin-top : 100px;
+#input-booktitle{
+    width : 250px;
 }
 
-.posting {
+.input-groups{
+    margin-top : 50px;
+}
+
+textarea.posting{
     height : 50vh;
     overflow-x : auto;
     word-break:normal;
@@ -18,7 +18,7 @@
     word-wrap: break-word;
     resize: none;
 }
-a
+
 .align-right{
     display : flex;
     flex-direction : row;

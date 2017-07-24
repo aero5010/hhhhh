@@ -19,9 +19,6 @@
     <br>
     
     <form action='/posts/<%= p.id %>/comments/create' method='post'>
-
-      <textarea name="content"></textarea>
-      <input type="submit" value="댓글쓰기">
       <p> ==================== COMMENTS ================</p>
       <% p.comments.all.each do |c| %>
         <%= c.comment %>
@@ -30,8 +27,10 @@
         <br>
       <% end %>
       <p> ==============================================</p>
+      
+      
+      <textarea name="content"></textarea>
+      <input type="submit" value="댓글쓰기">
     </form>
     
 <% end %>
-
-<p>hihi</p>

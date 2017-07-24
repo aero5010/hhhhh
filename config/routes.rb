@@ -1,9 +1,8 @@
 Rails.application.routes.draw do
-
+  devise_for :users, module: 'users'
   get 'comment/create'
 
   get 'comment/delete'
-
   get 'post/index'
   get 'post/create' => 'post#create'
   get 'post/list'
@@ -14,10 +13,6 @@ Rails.application.routes.draw do
   get '/posts/:id/comments/destroy' => 'comment#delete'
 
 
-  devise_for :users
-  get 'user/sign_in'
-
-  get 'user/sign_up'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
