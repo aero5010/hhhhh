@@ -1,5 +1,8 @@
 Rails.application.routes.draw do
   devise_for :users, module: 'users'
+  devise_scope :user do
+  get "users/sign_up/facebook", to: "users/registrations#new_facebook", as: "new_user_facebook"
+ end
   get 'comment/create'
 
   get 'comment/delete'
